@@ -1,0 +1,143 @@
+# Path to your oh-my-zsh installation.
+export ZSH=/Users/shamindras/.oh-my-zsh
+
+# Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+# Optionally, if you set this to "random", it'll load a random theme each
+# time that oh-my-zsh is loaded.
+ZSH_THEME="fino"
+
+# Uncomment the following line to use case-sensitive completion.
+# CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion. Case
+# sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
+
+# Uncomment the following line to disable bi-weekly auto-update checks.
+# DISABLE_AUTO_UPDATE="true"
+
+# Uncomment the following line to change how often to auto-update (in days).
+# export UPDATE_ZSH_DAYS=13
+
+# Uncomment the following line to disable colors in ls.
+# DISABLE_LS_COLORS="true"
+
+# Uncomment the following line to disable auto-setting terminal title.
+# DISABLE_AUTO_TITLE="true"
+
+# Uncomment the following line to enable command auto-correction.
+# ENABLE_CORRECTION="true"
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+# COMPLETION_WAITING_DOTS="true"
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# HIST_STAMPS="mm/dd/yyyy"
+
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(brew-services cabal docker-zsh-completion zsh-pip-completion)
+
+# User configuration
+
+export PATH="$(brew --prefix coreutils)/libexec/gnubin:/Users/shamindras/miniconda3/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/texbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/git/bin:/usr/local/MacGPG2/bin:.:/bin:/opt/chef/bin:/opt/chef/embedded/bin:/usr/local/zend/bin:/usr/local/zend/mysql/bin:/usr/local/share/npm/bin:/Users/shamindras/.nvm/v0.10.22/bin:/usr/local/opt/go/libexec/bin"
+# export MANPATH="/usr/local/man:$MANPATH"
+
+source $ZSH/oh-my-zsh.sh
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+# ssh
+# export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias c="clear"
+alias md="mkdir -pv"
+alias h="history"
+
+# confirmation #
+alias mv='mv -i'
+alias cp='cp -irp'
+alias ln='ln -i'
+
+# resume wget by default #
+alias wget='wget -c'
+
+#copy output of last command to clipboard
+alias cl="fc -e -|pbcopy"
+
+# copy the working directory path
+alias cpwd='pwd|tr -d "\n"|pbcopy'
+
+alias chrome="open -a \"Google Chrome\""
+
+# ls better
+alias la="ls -al"
+alias ld="ls -ld"
+alias ll="ls -alF"
+alias lt='ls -At1 && echo "------Oldest--"'
+alias ltr='ls -Art1 && echo "------Newest--"'
+
+# alias hub as git
+# alias git="hub"
+
+# Open Rstudio
+alias rstudio="open -a Rstudio"
+
+# git
+alias gs="git status"
+alias ga="git add"
+alias gl="git log --pretty=oneline --graph --all --topo-order"
+alias gc="git commit -m"
+alias grv="git remote -v"
+alias gcb="git checkout -b"
+alias gcm="git checkout master"
+alias gbd="git branch -d"
+alias gb="git branch"
+
+# ssh
+alias ssh="ssh -X"
+
+# Lyx - UPDATE: Improve this reference to be directly in the PATh
+# variable rather than as an alias
+alias lyx="open -a /Users/shamindras/Applications/LyX.app"
+
+# Hadoop
+alias hstart="/usr/local/Cellar/hadoop/2.7.1/sbin/start-dfs.sh;/usr/local/Cellar/hadoop/2.7.1/sbin/start-yarn.sh"
+alias hstop="/usr/local/Cellar/hadoop/2.7.1/sbin/stop-yarn.sh;/usr/local/Cellar/hadoop/2.7.1/sbin/stop-dfs.sh"
+
+# AWS - Stat243
+export AWS_ACCESS_KEY_ID=`grep aws_access_key_id /Users/shamindras/LEARNING/STUDY/UC_BERKELEY/STATISTICS/COURSES/MA_PROGRAM/STAT243/CURRENT_COURSE/STAT243-shamindra-work/Apache_Spark/stat243-fall-2015-credentials.boto | cut -d' ' -f3`
+export AWS_SECRET_ACCESS_KEY=`grep aws_secret_access_key /Users/shamindras/LEARNING/STUDY/UC_BERKELEY/STATISTICS/COURSES/MA_PROGRAM/STAT243/CURRENT_COURSE/STAT243-shamindra-work/Apache_Spark/stat243-fall-2015-credentials.boto | cut -d' ' -f3`

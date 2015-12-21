@@ -1,0 +1,27 @@
+Alfred 2.app
+Alfred Preferences.app
+Atom.app
+BetterTouchTool.app
+Box Sync.app
+Chrome Apps.localized
+DiffMerge.app
+DjView.app
+Emacs.app
+Firefox.app
+GitHub Desktop.app
+Google Chrome.app
+JDownloader2.app
+Julia-0.3.10.app
+JuliaStudio.app
+LyX.app
+RStudio.app
+SizeUp.app
+Skype.app
+Slack.app
+SourceTree.app
+Sublime Text.app
+Texpad.app
+The Unarchiver.app
+UnRarX.app
+VLC.app
+iTerm.app
