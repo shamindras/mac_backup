@@ -1,10 +1,15 @@
 # MAC Setup Instructions:
-1. First run any Updates to El Capitan
+1. Create a boot disk from the [following](https://www.youtube.com/watch?v=s6sTMvluakY)
+site
+    - Ensure that we
+
+
+2. First run any Updates to El Capitan
 Apple Icon > Software Update
 
     See here: [Guide](https://gist.github.com/todc/9562086)
 
-2. Follow the file [here](https://github.com/atomantic/dotfiles):
+3. Follow the file [here](https://github.com/atomantic/dotfiles):
     - *Fork* the repo
     - Customize it heavily with all preferences!
     - For example Add the following references to require_cask:
@@ -13,13 +18,20 @@ Apple Icon > Software Update
         - Flux
         - anaconda
         - mactex
-        - google drive 
+        - google drive
     - Remove the following references
         - Sublime edit
         - Alfred
         - git-flow
         - box-sync
 
-3. Install the following [zsh completions](https://github.com/zsh-users/zsh-completions)
+4. Install the following [zsh completions](https://github.com/zsh-users/zsh-completions)
 
-4. Install [x-code and command line tools](https://gist.github.com/todc/9562086)
+5. Install [x-code and command line tools](https://gist.github.com/todc/9562086)
+
+# Other stuff that would be good to do
+1. Add better [aliases](https://github.com/holman/dotfiles/tree/master/zsh) for
+zsh or from [here](https://github.com/skwp/dotfiles/blob/master/zsh/aliases.zsh)
+  - The aliases should be stored in ~/aliases.zsh
+2. Make xtrafinder the default Finder in mac
+3. Ensure that we set the correct [osx settings](https://github.com/skwp/dotfiles/blob/master/bin/osx)
