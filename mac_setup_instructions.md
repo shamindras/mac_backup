@@ -35,3 +35,5 @@ zsh or from [here](https://github.com/skwp/dotfiles/blob/master/zsh/aliases.zsh)
   - The aliases should be stored in ~/aliases.zsh
 2. Make xtrafinder the default Finder in mac
 3. Ensure that we set the correct [osx settings](https://github.com/skwp/dotfiles/blob/master/bin/osx)
+4. For xtrafinder check out the following [instructions](https://www.reddit.com/r/macapps/comments/3f6lxj/xtrafinder_for_mac_updated_for_os_x_1011_el/)
+for installation
