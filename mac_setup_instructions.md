@@ -33,6 +33,7 @@ Apple Icon > Software Update
   ) settings
   - Use the [Inconsolata-g font](https://github.com/powerline/fonts/tree/master/Inconsolata-g)
   - Use the [Solarized Dark color-theme](https://raw.githubusercontent.com/altercation/solarized/master/iterm2-colors-solarized/Solarized%20Dark.itermcolors)
+  - Overall instructions are as per this [gist](https://gist.github.com/kevin-smets/8568070)
 
 # Other stuff that would be good to do
 1. Add better [aliases](https://github.com/holman/dotfiles/tree/master/zsh) for
