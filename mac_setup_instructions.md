@@ -29,6 +29,11 @@ Apple Icon > Software Update
 
 5. Install [x-code and command line tools](https://gist.github.com/todc/9562086)
 
+6. Customize the iterm editor with the [following](https://gist.github.com/kevin-smets/8568070) settings
+  - Use the [Inconsolata-g font](https://github.com/powerline/fonts/tree/master/Inconsolata-g)
+  - Use the [Solarized Dark color-theme](https://raw.githubusercontent.com/altercation/solarized/master/iterm2-colors-solarized/Solarized%20Dark.itermcolors)
+  -
+
 # Other stuff that would be good to do
 1. Add better [aliases](https://github.com/holman/dotfiles/tree/master/zsh) for
 zsh or from [here](https://github.com/skwp/dotfiles/blob/master/zsh/aliases.zsh)
